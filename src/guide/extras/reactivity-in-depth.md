@@ -139,7 +139,7 @@ function trigger(target, key) {
 ```js
 function whenDepsChange(update) {
   const effect = () => {
-    activeEffect = effect
+    activeEffect = update
     update()
     activeEffect = null
   }
